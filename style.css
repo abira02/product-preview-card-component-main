@@ -99,47 +99,54 @@ body{
     cursor: pointer;
 }
 
-@media only screen and (max-width:720px){
+@media only screen and (width:375px){
     .container{
         display: flex;
         flex-direction: row;
     }
     .box{
         display: block;
-        width: 50vh;
-        height: 90vh;
+        width: 42vh;
+        height: 78vh;
     }
     .product-image{
         background-image: url("./images/image-product-mobile.jpg");
         background-size: cover;
-        width: 50vh;
+        width: 42vh;
         height: 37%;
         border-top-right-radius: 2vh;
         border-bottom-left-radius: 0px;
     }
     .reference{
-        width: 50vh;
+        width: 40vh;
         height: 60%;
     }
     .reference h3{
-        margin-top: 3ch;
-        margin-left: 3ch;
+        margin-top: 2ch;
+        margin-left: 2ch;
     }
     .reference h1{
-        margin-left: 3vh;
-        margin-right: 3vh;
+        margin-left: 2.5vh;
+        margin-right: 2vh;
+        font-size: 25px;
     }
     .reference p{
-        margin-left: 3ch;
-        margin-right: 3ch;
+        margin-left: 2.5ch;
+        margin-right: 1ch;
+        font-size: 11.5px;
     }
     .reference h2{
         margin-top: 5px;
-        margin-left: 4vh;
+        margin-left: 3vh;
         margin-bottom: 2vh;
     }
+    .reference span{
+        font-size: 11.5px;
+        vertical-align: middle;
+    }
     .reference button{
-        margin-left: 4vh;
-        width: 80%;
+        margin-left: 3vh;
+        width: 90%;
+        font-size: 11.5px;
     }
 }
