@@ -1,0 +1,145 @@
+.attribution { font-size: 11px; text-align: center; }
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 91vh;
+    height: 66vh;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 2vh;
+}
+
+.product-image{
+    height: 66vh;
+    width: 50%;
+    background-image: url("./images/image-product-desktop.jpg");
+    background-size: cover;
+    border-bottom-left-radius: 2vh;
+    border-top-left-radius: 2vh;
+}
+
+.reference{
+    text-align: left;
+    height: 66vh;
+    width: 50%;
+}
+.reference h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-top: 4ch;
+    margin-left: 4.5ch;
+    color: hsl(228, 12%, 48%);
+}
+.reference h1{
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+    margin-right: 4ch;
+    margin-left: 5vh;
+    line-height: 1;
+    font-weight: 700;
+}
+.reference p{
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    line-height: 1.7;
+    margin-left: 4ch;
+    margin-right: 6ch;
+}
+.reference h2{
+    font-family: 'Fraunces', serif;
+    margin-left: 5vh;
+    color: hsl(158, 36%, 37%);
+    font-size: 35px;
+}
+.reference span{
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 10px;
+    padding-top: 0px;
+    vertical-align: middle;
+    text-decoration: line-through;
+}
+.reference button{
+    height: 45px;
+    width: 75%;
+    margin-left: 5vh;
+    margin-right: auto;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 8px;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+.reference button svg{
+    vertical-align: middle;
+    padding-right: 5px;
+}
+.reference button:hover{
+    background-color: hsl(156, 42%, 18%);
+    cursor: pointer;
+}
+
+@media only screen and (max-width:720px){
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+    .box{
+        display: block;
+        width: 50vh;
+        height: 90vh;
+    }
+    .product-image{
+        background-image: url("./images/image-product-mobile.jpg");
+        background-size: cover;
+        width: 50vh;
+        height: 37%;
+        border-top-right-radius: 2vh;
+        border-bottom-left-radius: 0px;
+    }
+    .reference{
+        width: 50vh;
+        height: 60%;
+    }
+    .reference h3{
+        margin-top: 3ch;
+        margin-left: 3ch;
+    }
+    .reference h1{
+        margin-left: 3vh;
+        margin-right: 3vh;
+    }
+    .reference p{
+        margin-left: 3ch;
+        margin-right: 3ch;
+    }
+    .reference h2{
+        margin-top: 5px;
+        margin-left: 4vh;
+        margin-bottom: 2vh;
+    }
+    .reference button{
+        margin-left: 4vh;
+        width: 80%;
+    }
+}
